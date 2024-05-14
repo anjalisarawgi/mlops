@@ -1,9 +1,10 @@
 docs/site/
 
-# data
-data/
 # test cache
 manual_test/
+
+# data
+data
 
 # other local dev info
 .vscode/
