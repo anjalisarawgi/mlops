@@ -43,7 +43,6 @@ clean:
 ## Process raw data into processed data
 data:
 	python $(PROJECT_NAME)/data/make_dataset.py
-
 #################################################################################
 # Documentation RULES                                                           #
 #################################################################################
