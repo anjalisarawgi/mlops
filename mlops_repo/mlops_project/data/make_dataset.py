@@ -10,7 +10,7 @@ def normalize(images: torch.Tensor) -> torch.Tensor:
 
 @click.command()
 @click.option("--raw_dir", default="data/raw", help="Path to raw data directory")
-@click.option("--processed_dir", default="data/processed", help="Path to processed data directory")
+@click.option("--processed_dir", default="data/processed2", help="Path to processed data directory")
 def make_data(raw_dir: str, processed_dir: str):
     """Process raw data and save it to processed directory."""
 

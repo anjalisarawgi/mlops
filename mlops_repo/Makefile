@@ -42,7 +42,7 @@ clean:
 
 ## Process raw data into processed data
 data:
-	python $(PROJECT_NAME)/data/make_dataset.py
+	python $(PROJECT_NAME)/data/make_dataset.py --raw_dir $(RAW_DIR)  
 #################################################################################
 # Documentation RULES                                                           #
 #################################################################################
