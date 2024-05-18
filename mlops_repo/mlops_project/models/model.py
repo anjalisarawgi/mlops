@@ -1,30 +1,49 @@
 import torch
 
+from torch import nn
 
-class MyNeuralNet(torch.nn.Module):
-    """ Basic neural network class. 
 
-    Args:
-        in_features: number of input features
-        out_features: number of output features
+class MyAwesomeModel(nn.Module):
+    """My awesome model."""
 
-    """
+    def __init__(self) -> None:
+        super().__init__()
 
-    def __init__(self, in_features: int, out_features: int) -> None:
-        super(MyNeuralNet, self).__init__()
-
-        self.l1 = torch.nn.Linear(in_features, 500)
-        self.l2 = torch.nn.Linear(500, out_features)
-        self.r = torch.nn.ReLU()
+        self.conv1 = nn.Conv2d(1, 32, 3, 1)
+        self.conv2 = nn.Conv2d(32, 64, 3, 1)
+        self.conv3 = nn.Conv2d(64, 128, 3, 1)
+        self.dropout = nn.Dropout(0.5)
+        self.fc1 = nn.Linear(128, 10)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        """Forward pass of the model.
+        """Forward pass."""
+        # print("x0 shape", x.shape)
+        x = torch.relu(self.conv1(x))
+        # print("x1 shape", x.shape)
+        x = torch.max_pool2d(x, 2, 2)
+        # print("x2 shape", x.shape)
+        x = torch.relu(self.conv2(x))
+        x = torch.max_pool2d(x, 2, 2)
+        x = torch.relu(self.conv3(x))
+        x = torch.max_pool2d(x, 2, 2)
+        x = torch.flatten(x, 1)
 
-        Args:
-            x: input tensor expected to be of shape [N,in_features]
+        x = self.dropout(x)
 
-        Returns:
-            Output tensor with shape [N,out_features]
+        x = self.fc1(x)
 
-        """
-        return self.l2(self.r(self.l1(x)))
+        return x
+
+
+if __name__ == "__main__":
+    model = MyAwesomeModel()
+    print(f"Model architecture: {model}")
+
+    print(
+        f"Number of parameters: {sum(p.numel() for p in model.parameters())}")
+
+    dummy_input = torch.randn(1, 1, 28, 28)
+
+    output = model(dummy_input)
+
+    print(f"Output shape: {output.shape}")

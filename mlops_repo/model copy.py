@@ -17,11 +17,11 @@ class MyAwesomeModel(nn.Module):
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         """Forward pass."""
-        # print("x0 shape", x.shape)
+        print("x0 shape", x.shape)
         x = torch.relu(self.conv1(x))
-        # print("x1 shape", x.shape)
+        print("x1 shape", x.shape)
         x = torch.max_pool2d(x, 2, 2)
-        # print("x2 shape", x.shape)
+        print("x2 shape", x.shape)
         x = torch.relu(self.conv2(x))
         x = torch.max_pool2d(x, 2, 2)
         x = torch.relu(self.conv3(x))
@@ -39,8 +39,7 @@ if __name__ == "__main__":
     model = MyAwesomeModel()
     print(f"Model architecture: {model}")
 
-    print(
-        f"Number of parameters: {sum(p.numel() for p in model.parameters())}")
+    print(f"Number of parameters: {sum(p.numel() for p in model.parameters())}")
 
     dummy_input = torch.randn(1, 1, 28, 28)
 

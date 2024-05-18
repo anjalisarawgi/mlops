@@ -43,6 +43,10 @@ clean:
 ## Process raw data into processed data
 data:
 	python $(PROJECT_NAME)/data/make_dataset.py --raw_dir $(RAW_DIR)  
+
+## Train model
+train:
+	python $(PROJECT_NAME)/models/train_model.py
 #################################################################################
 # Documentation RULES                                                           #
 #################################################################################
