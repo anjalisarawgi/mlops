@@ -8,7 +8,6 @@ class MyAwesomeModel(nn.Module):
 
     def __init__(self) -> None:
         super().__init__()
-
         self.conv1 = nn.Conv2d(1, 32, 3, 1)
         self.conv2 = nn.Conv2d(32, 64, 3, 1)
         self.conv3 = nn.Conv2d(64, 128, 3, 1)
@@ -29,7 +28,6 @@ class MyAwesomeModel(nn.Module):
         x = torch.flatten(x, 1)
 
         x = self.dropout(x)
-
         x = self.fc1(x)
 
         return x
@@ -38,12 +36,8 @@ class MyAwesomeModel(nn.Module):
 if __name__ == "__main__":
     model = MyAwesomeModel()
     print(f"Model architecture: {model}")
-
     print(
         f"Number of parameters: {sum(p.numel() for p in model.parameters())}")
-
     dummy_input = torch.randn(1, 1, 28, 28)
-
     output = model(dummy_input)
-
     print(f"Output shape: {output.shape}")

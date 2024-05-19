@@ -1,5 +1,5 @@
 import torch
-from models.model import MyAwesomeModel
+from .models import MyAwesomeModel
 
 
 def predict(
