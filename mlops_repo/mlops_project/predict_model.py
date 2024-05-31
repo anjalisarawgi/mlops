@@ -1,6 +1,6 @@
 import torch
-from .models import MyAwesomeModel
-
+# import MyAwesomeModel
+from mlops_project.models.model import MyAwesomeModel
 
 def predict(
     model: torch.nn.Module,
@@ -22,7 +22,7 @@ def predict(
     # print("values", values.shape)
     return torch.cat([model(batch) for batch in dataloader], 0)
 
-
+ 
 # dataloader
 test_img = torch.load("data/processed/test_images.pt")
 dataloader = torch.utils.data.DataLoader(test_img, batch_size=32)

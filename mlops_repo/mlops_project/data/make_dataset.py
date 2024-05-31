@@ -1,6 +1,8 @@
 import click
 
 import torch
+import pdb
+pdb.set_trace()
 
 
 def normalize(images: torch.Tensor) -> torch.Tensor:
