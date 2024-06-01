@@ -1,0 +1,7 @@
+training:
+  lr: 1e-3
+  batch_size: 32
+  epochs: 10
+  data_paths:
+    train_images: "data/processed/train_images.pt"
+    train_targets: "data/processed/train_targets.pt"
