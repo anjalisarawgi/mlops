@@ -1,0 +1,353 @@
+
+{
+  "schemaVersion": 1,
+  "profile_memory": 1,
+  "record_shapes": 1,
+  "traceEvents": [
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 1038, "tid": 9403,
+    "ts": 1717279928887156, "dur": 14,
+    "args": {
+      "External id": 1,"Concrete Inputs": ["[]", "4", "", "", "False", ""], "Input type": ["ScalarList", "Scalar", "", "", "Scalar", ""], "Input Dims": [[], [], [], [], [], []], "Ev Idx": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::random_", "pid": 1038, "tid": 9403,
+    "ts": 1717279928888339, "dur": 938,
+    "args": {
+      "External id": 2,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": ["", ""], "Input type": ["long long", ""], "Input Dims": [[], []], "Ev Idx": 1
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 1038, "tid": 9403,
+    "ts": 1717279928889522, "dur": 1584,
+    "args": {
+      "External id": 3,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": [""], "Input type": ["long long"], "Input Dims": [[]], "Ev Idx": 2
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 1038, "tid": 9403,
+    "ts": 1717279928890561, "dur": 543,
+    "args": {
+      "External id": 4,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": [""], "Input type": ["long long"], "Input Dims": [[]], "Ev Idx": 3
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 1038, "tid": 9403,
+    "ts": 1717279929405542, "dur": 17,
+    "args": {
+      "External id": 5,"Concrete Inputs": ["[0]", "0", "", "", "", ""], "Input type": ["ScalarList", "Scalar", "", "", "", ""], "Input Dims": [[], [], [], [], [], []], "Ev Idx": 4
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929405853, "dur": 1519,
+    "args": {
+      "External id": 6,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": ["", ""], "Input type": ["unsigned char", ""], "Input Dims": [[0], []], "Ev Idx": 5
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929407168, "dur": 201,
+    "args": {
+      "External id": 7,"Concrete Inputs": ["", "", "0", "[47040000]", "[]"], "Input type": ["unsigned char", "", "Scalar", "ScalarList", "ScalarList"], "Input Dims": [[0], [], [], [], []], "Ev Idx": 6
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 1038, "tid": 9403,
+    "ts": 1717279929407383, "dur": 4,
+    "args": {
+      "External id": 8,"Concrete Inputs": ["[0]", "0", "", "", "", ""], "Input type": ["ScalarList", "Scalar", "", "", "", ""], "Input Dims": [[], [], [], [], [], []], "Ev Idx": 7
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929407392, "dur": 9,
+    "args": {
+      "External id": 9,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": ["", ""], "Input type": ["unsigned char", ""], "Input Dims": [[0], []], "Ev Idx": 8
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929407399, "dur": 1,
+    "args": {
+      "External id": 10,"Concrete Inputs": ["", "", "0", "[47040000]", "[]"], "Input type": ["unsigned char", "", "Scalar", "ScalarList", "ScalarList"], "Input Dims": [[0], [], [], [], []], "Ev Idx": 9
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929407592, "dur": 10790,
+    "args": {
+      "External id": 11,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": ["", "", "False"], "Input type": ["unsigned char", "unsigned char", "Scalar"], "Input Dims": [[47040000], [47040000], []], "Ev Idx": 10
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 1038, "tid": 9403,
+    "ts": 1717279929420505, "dur": 8,
+    "args": {
+      "External id": 12,"Concrete Inputs": ["[0]", "0", "", "", "", ""], "Input type": ["ScalarList", "Scalar", "", "", "", ""], "Input Dims": [[], [], [], [], [], []], "Ev Idx": 11
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929420518, "dur": 14,
+    "args": {
+      "External id": 13,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": ["", ""], "Input type": ["unsigned char", ""], "Input Dims": [[0], []], "Ev Idx": 12
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929420524, "dur": 5,
+    "args": {
+      "External id": 14,"Concrete Inputs": ["", "", "0", "[480000]", "[]"], "Input type": ["unsigned char", "", "Scalar", "ScalarList", "ScalarList"], "Input Dims": [[0], [], [], [], []], "Ev Idx": 13
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 1038, "tid": 9403,
+    "ts": 1717279929420538, "dur": 1,
+    "args": {
+      "External id": 15,"Concrete Inputs": ["[0]", "0", "", "", "", ""], "Input type": ["ScalarList", "Scalar", "", "", "", ""], "Input Dims": [[], [], [], [], [], []], "Ev Idx": 14
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929420539, "dur": 3,
+    "args": {
+      "External id": 16,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": ["", ""], "Input type": ["unsigned char", ""], "Input Dims": [[0], []], "Ev Idx": 15
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929420541, "dur": 0,
+    "args": {
+      "External id": 17,"Concrete Inputs": ["", "", "0", "[480000]", "[]"], "Input type": ["unsigned char", "", "Scalar", "ScalarList", "ScalarList"], "Input Dims": [[0], [], [], [], []], "Ev Idx": 16
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929420544, "dur": 586,
+    "args": {
+      "External id": 18,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": ["", "", "False"], "Input type": ["unsigned char", "unsigned char", "Scalar"], "Input Dims": [[480000], [480000], []], "Ev Idx": 17
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 1038, "tid": 9403,
+    "ts": 1717279929429276, "dur": 61,
+    "args": {
+      "External id": 19,"Concrete Inputs": ["[]", "4", "", "", "False", ""], "Input type": ["ScalarList", "Scalar", "", "", "Scalar", ""], "Input Dims": [[], [], [], [], [], []], "Ev Idx": 18
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::random_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929429367, "dur": 19,
+    "args": {
+      "External id": 20,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": ["", ""], "Input type": ["long long", ""], "Input Dims": [[], []], "Ev Idx": 19
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 1038, "tid": 9403,
+    "ts": 1717279929429390, "dur": 6,
+    "args": {
+      "External id": 21,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": [""], "Input type": ["long long"], "Input Dims": [[]], "Ev Idx": 20
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 1038, "tid": 9403,
+    "ts": 1717279929429394, "dur": 2,
+    "args": {
+      "External id": 22,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": [""], "Input type": ["long long"], "Input Dims": [[]], "Ev Idx": 21
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::randperm", "pid": 1038, "tid": 9403,
+    "ts": 1717279929430068, "dur": 3742,
+    "args": {
+      "External id": 23,"Concrete Inputs": ["60000", "", "4", "", "", "False"], "Input type": ["Scalar", "", "Scalar", "", "", "Scalar"], "Input Dims": [[], [], [], [], [], []], "Ev Idx": 22
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 1038, "tid": 9403,
+    "ts": 1717279929430755, "dur": 18,
+    "args": {
+      "External id": 24,"Concrete Inputs": ["[60000]", "4", "", "", "False", ""], "Input type": ["ScalarList", "Scalar", "", "", "Scalar", ""], "Input Dims": [[], [], [], [], [], []], "Ev Idx": 23
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::randperm", "pid": 1038, "tid": 9403,
+    "ts": 1717279929431080, "dur": 2726,
+    "args": {
+      "External id": 25,"Concrete Inputs": ["60000", "", ""], "Input type": ["Scalar", "", "long long"], "Input Dims": [[], [], [60000]], "Ev Idx": 24
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::scalar_tensor", "pid": 1038, "tid": 9403,
+    "ts": 1717279929432105, "dur": 275,
+    "args": {
+      "External id": 26,"Concrete Inputs": ["59999", "4", "0", "", ""], "Input type": ["Scalar", "Scalar", "Scalar", "", ""], "Input Dims": [[], [], [], [], []], "Ev Idx": 25
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::resize_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929432737, "dur": 2,
+    "args": {
+      "External id": 27,"Concrete Inputs": ["", "[60000]", ""], "Input type": ["long long", "ScalarList", ""], "Input Dims": [[60000], [], []], "Ev Idx": 26
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::resize_", "pid": 1038, "tid": 9403,
+    "ts": 1717279929433118, "dur": 1,
+    "args": {
+      "External id": 28,"Concrete Inputs": ["", "[60000]", ""], "Input type": ["long long", "ScalarList", ""], "Input Dims": [[60000], [], []], "Ev Idx": 27
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::resolve_conj", "pid": 1038, "tid": 9403,
+    "ts": 1717279929434219, "dur": 378,
+    "args": {
+      "External id": 29,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": [""], "Input type": ["long long"], "Input Dims": [[60000]], "Ev Idx": 28
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::resolve_neg", "pid": 1038, "tid": 9403,
+    "ts": 1717279929434605, "dur": 1,
+    "args": {
+      "External id": 30,"Fwd thread id": 0, "Sequence number": 0, "Concrete Inputs": [""], "Input type": ["long long"], "Input Dims": [[60000]], "Ev Idx": 29
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "enumerate(DataLoader)#_MultiProcessingDataLoaderIter.__next__", "pid": 1038, "tid": 9403,
+    "ts": 1717279929438740, "dur": 4674851,
+    "args": {
+      "External id": 31,"Ev Idx": 30
+    }
+  },
+  {
+    "ph": "i", "cat": "cpu_instant_event", "s": "t", "name": "[memory]",
+    "pid": 1038, "tid": 9403,
+    "ts": 1717279928887165,
+    "args": {
+      "Bytes": 8, "Total Allocated": 8, "Addr": 4819137472, "Device Id": -1, "Total Reserved": 0, "Device Type": 0, "Ev Idx": 31
+    }
+  },
+  {
+    "ph": "i", "cat": "cpu_instant_event", "s": "t", "name": "[memory]",
+    "pid": 1038, "tid": 9403,
+    "ts": 1717279928891114,
+    "args": {
+      "Bytes": -8, "Total Allocated": 0, "Addr": 4819137472, "Device Id": -1, "Total Reserved": 0, "Device Type": 0, "Ev Idx": 32
+    }
+  },
+  {
+    "ph": "i", "cat": "cpu_instant_event", "s": "t", "name": "[memory]",
+    "pid": 1038, "tid": 9403,
+    "ts": 1717279929405462,
+    "args": {
+      "Bytes": 47040064, "Total Allocated": 0, "Addr": 5796528128, "Device Id": -1, "Total Reserved": 47040064, "Device Type": 0, "Ev Idx": 33
+    }
+  },
+  {
+    "ph": "i", "cat": "cpu_instant_event", "s": "t", "name": "[memory]",
+    "pid": 1038, "tid": 9403,
+    "ts": 1717279929420482,
+    "args": {
+      "Bytes": 480064, "Total Allocated": 0, "Addr": 5328863232, "Device Id": -1, "Total Reserved": 480064, "Device Type": 0, "Ev Idx": 34
+    }
+  },
+  {
+    "ph": "i", "cat": "cpu_instant_event", "s": "t", "name": "[memory]",
+    "pid": 1038, "tid": 9403,
+    "ts": 1717279929429328,
+    "args": {
+      "Bytes": 8, "Total Allocated": 8, "Addr": 5315690816, "Device Id": -1, "Total Reserved": 0, "Device Type": 0, "Ev Idx": 35
+    }
+  },
+  {
+    "ph": "i", "cat": "cpu_instant_event", "s": "t", "name": "[memory]",
+    "pid": 1038, "tid": 9403,
+    "ts": 1717279929429407,
+    "args": {
+      "Bytes": -8, "Total Allocated": 0, "Addr": 5315690816, "Device Id": -1, "Total Reserved": 0, "Device Type": 0, "Ev Idx": 36
+    }
+  },
+  {
+    "ph": "i", "cat": "cpu_instant_event", "s": "t", "name": "[memory]",
+    "pid": 1038, "tid": 9403,
+    "ts": 1717279929430770,
+    "args": {
+      "Bytes": 480000, "Total Allocated": 480000, "Addr": 6308397056, "Device Id": -1, "Total Reserved": 0, "Device Type": 0, "Ev Idx": 37
+    }
+  },
+  {
+    "ph": "i", "cat": "cpu_instant_event", "s": "t", "name": "[memory]",
+    "pid": 1038, "tid": 9403,
+    "ts": 1717279929432198,
+    "args": {
+      "Bytes": 8, "Total Allocated": 480008, "Addr": 4817226688, "Device Id": -1, "Total Reserved": 0, "Device Type": 0, "Ev Idx": 38
+    }
+  },
+  {
+    "ph": "i", "cat": "cpu_instant_event", "s": "t", "name": "[memory]",
+    "pid": 1038, "tid": 9403,
+    "ts": 1717279929432383,
+    "args": {
+      "Bytes": -8, "Total Allocated": 480000, "Addr": 4817226688, "Device Id": -1, "Total Reserved": 0, "Device Type": 0, "Ev Idx": 39
+    }
+  },
+  {
+    "ph": "i", "cat": "cpu_instant_event", "s": "t", "name": "[memory]",
+    "pid": 1038, "tid": 9403,
+    "ts": 1717279929436690,
+    "args": {
+      "Bytes": -480000, "Total Allocated": 0, "Addr": 6308397056, "Device Id": -1, "Total Reserved": 0, "Device Type": 0, "Ev Idx": 40
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 1717279928886016, "pid": 1038, "tid": 9403,
+    "args": {
+      "name": "thread 9403 ()"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 1717279928886016, "pid": 1038, "tid": 9403,
+    "args": {
+      "sort_index": 9403
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 1717279928886016, "pid": 1038, "tid": 9403,
+    "args": {
+      "name": "thread 9403 ()"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 1717279928886016, "pid": 1038, "tid": 9403,
+    "args": {
+      "sort_index": 9403
+    }
+  },
+  {
+    "ph": "X", "cat": "Trace", "ts": 1717279928884773, "dur": 5229294,
+    "pid": "Spans", "tid": "PyTorch Profiler",
+    "name": "PyTorch Profiler (0)",
+    "args": {
+      "Op count": 0
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1717279928884773,
+    "pid": "Spans", "tid": 0,
+    "args": {
+      "sort_index": 536870912
+    }
+  },
+  {
+    "name": "Iteration Start: PyTorch Profiler", "ph": "i", "s": "g",
+    "pid": "Traces", "tid": "Trace PyTorch Profiler", "ts": 1717279928884773
+  },
+  {
+    "name": "Record Window End", "ph": "i", "s": "g",
+    "pid": "", "tid": "", "ts": 1717279934114625
+  }
+  ],
+  "traceName": "./log/vae_mnist/Anjalis-MBP.fritz.box_1038.1717279934119166000.pt.trace.json"
+}
