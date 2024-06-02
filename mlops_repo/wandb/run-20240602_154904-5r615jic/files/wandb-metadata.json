@@ -1,0 +1,48 @@
+{
+    "os": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.9.15",
+    "heartbeatAt": "2024-06-02T13:49:05.155975",
+    "startedAt": "2024-06-02T13:49:04.350462",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "git@github.com:anjalisarawgi/mlops.git",
+        "commit": "251c1c01a13f5e8be8fe186479c411d383351494"
+    },
+    "email": "anjali.sarawgi9@gmail.com",
+    "root": "/Users/anjalisarawgi/Desktop/anjali/mlops",
+    "host": "Anjalis-MacBook-Pro.local",
+    "username": "anjalisarawgi",
+    "executable": "/Users/anjalisarawgi/anaconda3/envs/mlops/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3204,
+        "min": 600,
+        "max": 3204
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3204,
+            "min": 600,
+            "max": 3204
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 9.56032943725586
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 8.0
+    }
+}

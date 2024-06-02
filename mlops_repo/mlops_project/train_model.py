@@ -89,6 +89,7 @@ def train(config) -> None:
         # print(f"Error: {e}")
         print("Please check the paths and ensure the data files exist.")
         return
+
     train_set = torch.utils.data.TensorDataset(train_img, train_target)
     print("train_set", len(train_set))
     # print("train_set", train_set.shape)  # torch.Size([25000, 1, 28, 28])
