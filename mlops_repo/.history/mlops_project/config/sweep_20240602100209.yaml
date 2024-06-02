@@ -1,4 +1,4 @@
-program: mlops_project/train_model.py
+program: train_model.py
 method: bayes # Choose between 'grid', 'random', or 'bayes'
 metric:
   name: loss
