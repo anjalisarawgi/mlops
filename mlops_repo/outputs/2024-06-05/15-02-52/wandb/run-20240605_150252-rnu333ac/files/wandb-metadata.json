@@ -1,0 +1,49 @@
+{
+    "os": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.9.15",
+    "heartbeatAt": "2024-06-05T13:02:53.537726",
+    "startedAt": "2024-06-05T13:02:52.966552",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/anjalisarawgi/Desktop/anjali/mlops/mlops_repo/mlops_project/train_model.py",
+    "codePathLocal": null,
+    "codePath": "mlops_repo/mlops_project/train_model.py",
+    "git": {
+        "remote": "git@github.com:anjalisarawgi/mlops.git",
+        "commit": "347129a6a572785d52d4334ccb89be36541fed99"
+    },
+    "email": "anjali.sarawgi9@gmail.com",
+    "root": "/Users/anjalisarawgi/Desktop/anjali/mlops",
+    "host": "Anjalis-MacBook-Pro.local",
+    "username": "anjalisarawgi",
+    "executable": "/Users/anjalisarawgi/anaconda3/envs/mlops/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3204,
+        "min": 600,
+        "max": 3204
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3204,
+            "min": 600,
+            "max": 3204
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 9.56032943725586
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 8.0
+    }
+}
