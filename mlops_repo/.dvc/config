@@ -1,5 +1,8 @@
 [core]
     no_scm = True
-    remote = storage
+    remote = remote_storage
 ['remote "storage"']
     url = gdrive://16Jej4i6OEusYbwDThAaf_HB_O3oS7zem
+['remote "remote_storage"']
+    url = gs://mlops-bucket-anjali/
+    version_aware = true
