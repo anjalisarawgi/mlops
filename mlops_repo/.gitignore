@@ -6,6 +6,11 @@ manual_test/
 # data
 data
 
+lightning_logs
+outputs
+wandb
+wandb_docker
+
 # other local dev info
 .vscode/
 
