@@ -1,6 +1,0 @@
-model:
-  conv1_out_channels: 32
-  conv2_out_channels: 64
-  conv3_out_channels: 128
-  dropout: 0.05
-  fc1_out_features: 10
