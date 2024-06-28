@@ -19,6 +19,7 @@ class MyAwesomeModel(nn.Module):
         self.dropout = nn.Dropout(hparams_model["dropout"])
         self.fc1 = nn.Linear(
             hparams_model["conv3_out_channels"], hparams_model["fc1_out_features"])
+ # src/models/model.py
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         """Forward pass."""
