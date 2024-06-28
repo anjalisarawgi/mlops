@@ -16,4 +16,3 @@ steps:
     'push',
     'europe-west1-docker.pkg.dev/$PROJECT_ID/mlops-artifact/test'
   ]
-logsBucket: 'gs://mlops-jaa-bucket/'
