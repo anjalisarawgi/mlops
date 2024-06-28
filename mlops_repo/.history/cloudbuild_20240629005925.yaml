@@ -6,7 +6,7 @@ steps:
         "build",
         ".",
         "-t",
-        "europe-west1-docker.pkg.dev/$PROJECT_ID/mlops-artifact/classifier",
+        "europe-west3-docker.pkg.dev/$PROJECT_ID/mlops-artifact/classifier",
         "-f",
         "Dockerfile",
       ]
@@ -15,9 +15,9 @@ steps:
     args:
       [
         "push",
-        "europe-west1-docker.pkg.dev/$PROJECT_ID/mlops-artifact/classifier",
+        "europe-west3-docker.pkg.dev/$PROJECT_ID/mlops-artifact/classifier",
       ]
 images:
-  - "europe-west1-docker.pkg.dev/$PROJECT_ID/mlops-artifact/classifier"
+  - "europe-west3-docker.pkg.dev/$PROJECT_ID/mlops-artifact/classifier"
 options:
   logging: CLOUD_LOGGING_ONLY
