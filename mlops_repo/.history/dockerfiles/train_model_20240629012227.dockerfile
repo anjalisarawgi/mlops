@@ -11,7 +11,7 @@ COPY mlops_repo/mlops_project/ mlops_repo/mlops_project/
 COPY mlops_repo/data/ mlops_repo/data/
 
 WORKDIR /
-RUN pip install -r mlops_repo/requirements.txt --no-cache-dir
+RUN pip install -r requirements.txt --no-cache-dir
 RUN pip install . --no-deps --no-cache-dir
 
 ENTRYPOINT ["python", "-u", "mlops_project/train_model.py"]
