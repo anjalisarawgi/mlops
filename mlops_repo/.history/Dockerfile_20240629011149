@@ -6,7 +6,7 @@ RUN apt update && \
     apt clean && rm -rf /var/lib/apt/lists/*
 
 COPY mlops_repo/requirements.txt mlops_repo/requirements.txt
-COPY mlops_repo/main.py mlops_repo/main.py
+COPY main.py main.py
 WORKDIR /
 RUN pip install -r mlops_repo/requirements.txt --no-cache-dir
 
